@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+</head>
+<body>
+Person: {{ person }} <br>
+Order: <br>
+{% for item in order %}
+{{item_names.index.item}} {{item}}<br>
+{% endfor %}
+Warranty:
+{%if warranty%}
+The product is under warranty.
+
+{%else%}
+Product warranty has expired.
+{%endif%}
+
+</body>
+</html>

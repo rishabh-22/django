@@ -1,0 +1,18 @@
+{%load extra_func%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <Title>Greetings</Title>
+    {% endblock title %}
+</head>
+<body>
+This is some text!
+
+Hello {{name|lower|cut:"a"}}
+<br>
+The value is {% minustwo value %}
+</body>
+</html>

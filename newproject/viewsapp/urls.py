@@ -4,5 +4,6 @@ from .views import *
 
 urlpatterns = [
 	path('', index, name='index'),
-	path('<int:ids>', second)
+	path('greet/<int:ids>', second),
+	path('<int:ids>', methodForTest),
 ]
